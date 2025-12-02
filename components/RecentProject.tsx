@@ -16,10 +16,7 @@ const RecentProject = () => {
             key={id}
             className="sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
           >
-            <PinContainer
-              title={title}
-              href={link}
-            >
+            <PinContainer title={title} href={link}>
               <div className="relative w-[80vw] sm:w-[570px] sm:h-[40vh] h-[30vh] aspect-video overflow-hidden mb-10">
                 <div className="relative w-full h-full overflow-hidden rounded-lg">
                   <Image
@@ -50,7 +47,7 @@ const RecentProject = () => {
                 <div className="flex items-center">
                   {iconLists.map((icon, index) => (
                     <div
-                      key={`${icon.id}-${index}`}
+                      key={`${icon}-${index}`}
                       className="border border-white/20 rounded-full bg-black lg:h-10 lg:w-10 h-8 w-8  flex items-center justify-center"
                       style={{
                         transform: `translateX(-${5 * index + 2}px)`,
