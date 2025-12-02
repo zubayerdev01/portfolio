@@ -50,6 +50,7 @@ const Hero = () => {
       </div>
       <div>
         <BackgroundBeamsWithCollision />
+        
       </div>
 
       <div className="flex justify-center relative my-10 z-10">
